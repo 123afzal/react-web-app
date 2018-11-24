@@ -1,0 +1,44 @@
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.nav-right{
+  nav{
+    top:0;
+    right: 0;
+    bottom:0;
+    position: fixed;
+    background: $colorLightBlack;
+    padding: 10px 10px 38px;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all .4s;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+    z-index: 40;
+  }
+  nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  nav ul li{
+    padding-bottom: $globalPadding;
+    padding-top: $globalPadding;
+    width: 60px;
+  }
+  nav ul img{
+    width: 50px;
+    height: 50px;
+  }
+
+  nav button {
+    display: block;
+    width: 100%;
+  }
+}
+.user{
+  background-color: $colorSkyBlue;
+  border-radius: 8px;
+}

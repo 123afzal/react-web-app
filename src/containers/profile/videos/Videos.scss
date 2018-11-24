@@ -1,0 +1,34 @@
+@import "../../../style/common/colors.scss";
+@import "../../../style/common/typography.scss";
+@import "../../../style/common/settings.scss";
+
+
+.profile-content {
+  position: relative;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  .profile-videos{
+    margin-top: $globalMargin;
+    position: relative;
+    .videos{
+      position: relative;
+      margin-top: $globalMargin;
+      .video{
+        video{
+          width: 200px;
+        }
+        span{
+          padding-right: $globalPadding;
+          font-size: $fontSmall;
+          label{
+            font-size: $fontExtraSmall;
+            display: block;
+            position: absolute;
+            bottom: -12px;
+          }
+        }
+      }
+    }
+  }
+}
+

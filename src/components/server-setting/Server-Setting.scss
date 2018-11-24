@@ -1,0 +1,168 @@
+/* Settings, Variables */
+@import "../../style/common/settings.scss";
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.server-settings{
+  width: 300px;
+  .heading{
+    color: $colorWhiteGrey;
+    padding: $globalPadding $globalPadding 0 $globalPadding*2;
+    text-align: left;
+    h6{
+      margin: 0;
+    }
+  }
+  .settings-list{
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+      li{
+        padding-top: $globalPadding - 5;
+        padding-bottom: $globalPadding - 5;
+        padding-left: $globalPadding;
+        margin: 0 $globalMargin 0 $globalMargin;
+        color: $colorWhiteGrey;
+        &.active{
+          color: $colorWhite;
+          background-color: $colorSkyBlue;
+          border-radius:5px;
+          border: none;
+        }
+        h6{
+          margin: 0;
+        }
+      }
+    }
+    .web-hooks{
+      background-color: $colorMilkyGrey;
+      border-radius:5px;
+      color: $colorWhite;
+    }
+  }
+}
+.server-overview{
+  position: relative;
+  background-color: $colorMilkyGrey !important;
+  width: 100%;
+  padding-left: $globalPadding*2;
+  padding-right: $globalPadding*2;
+  padding-top: $globalPadding;
+  text-align: left;
+  h6{
+    margin: 0;
+    text-align: left;
+  }
+  hr{
+    border-color: $colorBluishGrey;
+    margin-top: $globalMargin*2;
+    margin-bottom: $globalMargin*2;
+  }
+  .server-overview-header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: $fontSmall;
+    margin-top: $globalMargin*2;
+    .server-image{
+      position: relative;
+      left: 0;
+      min-width: 310px;
+      width: 100%;
+      text-align: left;
+      img{
+        width: 128px;
+        height: 128px;
+        float: left;
+      }
+      button{
+        width: auto;
+        margin-left: 0;
+        margin-top: $globalMargin*2;
+      }
+    }
+    .server-name{
+      text-align: left;
+      position: relative;
+      float: right;
+      right: 0;
+      padding-left: $globalPadding*2;
+      min-width: 310px;
+      width: 100%;
+    }
+  }
+  .server-overview-content{
+    position: relative;
+    margin-top: $globalMargin*2;
+    width: 100%;
+    font-size: $fontSmall;
+    text-align: left;
+    .overview-channel-time{
+      display: flex;
+      .channel{
+        width: 100%;
+        margin-right: $globalMargin;
+      }
+      .time{
+        width: 100%;
+        margin-left: $globalMargin;
+      }
+    }
+    span{
+      position: absolute;
+    }
+  }
+  .server-overview-footer{
+    h6{
+      margin-bottom: $globalMargin;
+    }
+    font-size: $fontSmall;
+    position: relative;
+    width: 100%;
+    margin-top: $globalMargin*6;
+    .footer-text{
+      position: relative;
+      height: 120px;
+      //width: 100%;
+    }
+    .checkboxes{
+      padding: $globalPadding;
+      input{
+        display:unset;
+        width: 20px;
+        margin: 0;
+        height: 20px;
+      }
+      font-size: $fontMedium;
+      .check-messages{
+        padding-left: $globalPadding;
+        padding-top: $globalPadding;
+        background-color: $colorSkyBlue;
+        border-radius: 5px;
+        label{
+          position: absolute;
+          bottom: 60px;
+          left: 50px;
+        }
+    }
+      .check-mention{
+        padding-left: $globalPadding;
+        padding-top: $globalPadding;
+        margin-top: $globalMargin;
+        background-color: $colorDarkGrey;
+        border-radius: 5px;
+        label{
+          position: absolute;
+          bottom: 13px;
+          left: 50px;
+        }
+      }
+    }
+  }
+}

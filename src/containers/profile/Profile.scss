@@ -1,0 +1,209 @@
+@import "../../style/common/colors.scss";
+@import "../../style/common/typography.scss";
+@import "../../style/common/settings.scss";
+
+.profile{
+  position: relative;
+  height: 100%;
+  width: calc(100% - 310px);
+  overflow: auto;
+  .profile-cover{
+    position: relative;
+    background-image: url("../../assets/cover.jpg");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgb(0, 0, 0) 0px -32px 200px -30px inset;
+    .social-icons{
+      position: absolute;
+      left:100px;
+      top:30px;
+      img{
+        width: 30px;
+        padding-right: $globalPadding;
+      }
+    }
+    .display-picture{
+      position: absolute;
+      display: flex;
+      left: 100px;
+      bottom: 30px;
+      img{
+        width: 70px;
+        height: 70px;
+      }
+      .display-name{
+        padding-top: $globalPadding*1.5;
+        padding-left: $globalPadding;
+        .user-nick{
+          font-size: $fontSmall;
+        }
+      }
+    }
+    .cover-buttons{
+      position: absolute;
+      bottom: 30px;
+      right: 100px;
+      button{
+        width: auto;
+        float: left;
+        i{
+          padding-right: $globalPadding - 5;
+        }
+      }
+    }
+  }
+
+  .profile-options{
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    font-size: $fontSmall;
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style: none;
+        display: inline;
+        margin-left: $globalMargin*2;
+        margin-right: $globalMargin*2;
+        padding-bottom: $globalPadding*1.2;
+        &.active{
+          border-bottom: 2px solid $colorBluishGreyOpa6;
+        }
+      }
+    }
+  }
+
+  .profile-content{
+    position: relative;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    .user-overview{
+      margin-top: $globalMargin;
+      font-size: $fontSmall;
+    }
+    .profile-videos{
+      margin-top: $globalMargin;
+      position: relative;
+      .videos{
+        position: relative;
+        margin-top: $globalMargin;
+        .video{
+          font-size: $fontExtraSmall;
+          float: left;
+          video{
+            width: 200px;
+            margin: $globalMargin - 5;
+          }
+        }
+      }
+    }
+    .game-actvities{
+      position: relative;
+      display: flex;
+      margin-top: $globalMargin*3;
+      margin-left: $globalMargin*2;
+      clear: both;
+      label{
+        font-size: $fontExtraSmall;
+      }
+      .games-list{
+        position: relative;
+        max-width: 270px;
+        width: 100%;
+        margin-top: $globalMargin;
+        ul{
+          margin: 0;
+          padding: 0;
+          padding-top: $globalPadding;
+          li{
+            list-style: none;
+            display: inline;
+            padding-left: $globalPadding - 5;
+            padding-right: $globalPadding - 5;
+            img{
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
+      .activities{
+        position: relative;
+        margin-left: $globalMargin*2;
+        margin-right: $globalMargin;
+        margin-top: $globalMargin;
+        width: 100%;
+        .post-list{
+          padding: $globalPadding $globalPadding 0 $globalPadding;
+          width: 100%;
+          .post{
+            background-color: $colorDarkGrey;
+            .user-header{
+              font-size: $fontSmall;
+              position: relative;
+              padding: $globalPadding $globalPadding*2 $globalPadding $globalPadding*2 ;
+              img{
+                width: 50px;
+                height: 50px;
+              }
+              .user-name{
+                position: absolute;
+                top:18px;
+                padding-left: $globalPadding;
+              }
+              .user-drop{
+                position: absolute;
+                right: 20px;
+              }
+            }
+            .post-content{
+              padding: 0 $globalPadding*2 0 $globalPadding*2 ;
+              font-size: $fontExtraSmall;
+            }
+            .lcs{
+              position: relative;
+              padding: $globalPadding $globalPadding*2 $globalPadding $globalPadding*2 ;
+              ul{
+                margin: 0;
+                padding: 0;
+                li{
+                  list-style: none;
+                  display: inline;
+                  padding-right: $globalPadding;
+                }
+              }
+            }
+            .load-comments{
+              position: relative;
+              background-color: $colorGrayMixBlack;
+              padding: 0 $globalPadding*2 0 $globalPadding*2 ;
+
+            }
+            .write-comment{
+              padding: $globalPadding $globalPadding*2 $globalPadding $globalPadding*2 ;
+              display: flex;
+              img{
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .groups{
+      position: relative;
+      margin-top: $globalMargin;
+      .group-content{
+        width: 100%;
+        margin-top: $globalMargin;
+        padding: $globalPadding*6;
+        background-color: $colorGrayMixBlack;
+        text-align: center;
+      }
+    }
+  }
+}

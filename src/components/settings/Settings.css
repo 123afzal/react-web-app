@@ -1,0 +1,94 @@
+/* Settings, Variables */
+/* Theme Colors */
+/* Typography */
+/* Buttons */
+.button, .btn-border, .btn-default {
+  cursor: pointer;
+  padding: 3px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 2px 5px; }
+
+.btn-border {
+  color: #9baec8;
+  background-color: transparent;
+  border: 1px solid #9baec8; }
+  .btn-border:hover {
+    border: 1px solid rgba(155, 174, 200, 0.6);
+    color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.btn-default {
+  color: #1f232b;
+  background-color: #9baec8; }
+  .btn-default:hover {
+    color: rgba(31, 35, 43, 0.6);
+    background-color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.settings {
+  width: 300px; }
+  .settings .heading {
+    color: #d9e1e8;
+    padding: 20px; }
+    .settings .heading h3 {
+      margin: 0; }
+  .settings .settings-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left; }
+    .settings .settings-list ul li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      color: #d9e1e8; }
+      .settings .settings-list ul li.active {
+        border-left: 4px solid rgba(155, 174, 200, 0.6);
+        color: #9baec8; }
+
+.tab-account {
+  background-color: white !important;
+  width: 100%; }
+  .tab-account .pop-up {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%; }
+    .tab-account .pop-up .warning {
+      padding: 10px;
+      background: #fdeded;
+      border: 2px solid #FF0000;
+      color: #FF0000;
+      border-radius: 5px;
+      max-width: 600px;
+      text-align: left;
+      margin: auto; }
+      .tab-account .pop-up .warning h5 {
+        margin: 0; }
+      .tab-account .pop-up .warning p {
+        margin: 0; }
+  .tab-account .user-personal {
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px 20px 40px; }
+    .tab-account .user-personal .user-personal-edit {
+      width: 100%;
+      text-align: left; }
+    .tab-account .user-personal .user-image {
+      width: 100%;
+      margin: auto; }
+      .tab-account .user-personal .user-image img {
+        width: 200px;
+        height: 200px; }
+  .tab-account .account-btn {
+    right: 30px;
+    float: right;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .tab-account .account-btn button {
+      width: auto; }

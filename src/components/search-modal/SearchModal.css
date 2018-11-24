@@ -1,0 +1,95 @@
+/* Theme Colors */
+/* Typography */
+/* Buttons */
+.button, .btn-border, .btn-default {
+  cursor: pointer;
+  padding: 3px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 2px 5px; }
+
+.btn-border {
+  color: #9baec8;
+  background-color: transparent;
+  border: 1px solid #9baec8; }
+  .btn-border:hover {
+    border: 1px solid rgba(155, 174, 200, 0.6);
+    color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.btn-default {
+  color: #1f232b;
+  background-color: #9baec8; }
+  .btn-default:hover {
+    color: rgba(31, 35, 43, 0.6);
+    background-color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.search-modal {
+  width: 100%; }
+  .search-modal .content {
+    position: relative;
+    width: 100%; }
+    .search-modal .content input {
+      text-indent: 25px; }
+    .search-modal .content .fa-search {
+      position: absolute;
+      top: 20px;
+      left: 10px; }
+    .search-modal .content .search-content {
+      position: relative;
+      width: 100%;
+      display: flex; }
+      .search-modal .content .search-content .search-users {
+        background-color: #0e1013;
+        border: 2px solid #0e1013;
+        border-radius: 5px;
+        width: 100%;
+        min-width: 600px;
+        position: relative; }
+        .search-modal .content .search-content .search-users img {
+          width: 45px;
+          height: 45px; }
+        .search-modal .content .search-content .search-users .result {
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: 10px; }
+          .search-modal .content .search-content .search-users .result button {
+            width: auto;
+            margin: 0; }
+          .search-modal .content .search-content .search-users .result .connect {
+            position: absolute;
+            right: 10px; }
+      .search-modal .content .search-content .search-filters {
+        text-align: left;
+        position: relative;
+        width: 100%;
+        padding: 10px; }
+        .search-modal .content .search-content .search-filters ul {
+          margin: 0;
+          padding: 0; }
+          .search-modal .content .search-content .search-filters ul li {
+            display: inline;
+            list-style: none;
+            padding-right: 30px; }
+            .search-modal .content .search-content .search-filters ul li input {
+              display: unset;
+              margin: 0;
+              width: 20px;
+              height: auto; }
+        .search-modal .content .search-content .search-filters hr {
+          border-color: #9baec8;
+          margin: 0; }
+    .search-modal .content .searching {
+      position: relative;
+      width: 100%;
+      display: flex; }
+      .search-modal .content .searching button {
+        margin: 0 0 0 10px;
+        height: 40px;
+        width: auto; }

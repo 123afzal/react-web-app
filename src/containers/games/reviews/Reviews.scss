@@ -1,0 +1,44 @@
+@import "../../../style/common/colors.scss";
+@import "../../../style/common/typography.scss";
+@import "../../../style/common/settings.scss";
+
+.reviews{
+  position: relative;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  margin-top: $globalMargin*2;
+  button{
+    margin: 0;
+  }
+  label{
+    font-size: 10px;
+  }
+  .review-list{
+    position: relative;
+    width: 100%;
+    margin-top: $globalMargin;
+    padding-top: $globalPadding;
+    .review{
+      background-color: $colorDarkGrey;
+      position: relative;
+      width: 100%;
+      margin:$globalMargin 0 $globalMargin 0;
+      font-size: $fontSmall;
+      .review-info{
+        padding:$globalPadding 0 0 $globalPadding*2;
+        position: relative;
+        display: flex;
+        img{
+          width: 30px;
+          height: 30px;
+        }
+        i{
+          padding-left: $globalPadding;
+        }
+        .review-post-time{
+          font-size: $fontExtraSmall;
+        }
+      }
+    }
+  }
+}

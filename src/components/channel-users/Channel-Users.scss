@@ -1,0 +1,43 @@
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+
+
+.channel-users{
+  top:0;
+  left: 0;
+  bottom:0;
+  position: fixed;
+  width: 250px;
+  background-color: $colorGrayMixBlackDark;
+  .user-header{
+    display: flex;
+    box-shadow: 0 1px 1px 0 $colorDarkGrey2;
+    padding: $globalPadding;
+    background: $colorDarkGrey2;
+    input{
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .users{
+    text-align: left;
+    margin: $globalMargin*2;
+    h6{
+      margin: 0;
+      margin-bottom: $globalMargin - 5;
+    }
+    img{
+      width: 30px;
+      height: 30px;
+    }
+    span{
+      position: absolute;
+      font-size: $fontSmall;
+      padding-left: $globalPadding;
+    }
+  }
+}

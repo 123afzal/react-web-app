@@ -1,0 +1,74 @@
+@import "../../style/common/colors.scss";
+@import "../../style/common/typography.scss";
+@import "../../style/common/settings.scss";
+
+.community{
+  position: relative;
+  height: 100%;
+
+  .main{
+    position: relative;
+    height: 100%;
+    padding-right: 320px;
+
+    .top-navigations{
+      padding: $globalPadding 0 $globalPadding 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      nav{
+        a{
+          margin-left: $globalMargin;
+          margin-right: $globalMargin;
+          text-decoration: none;
+          color:$colorWhiteGrey;
+          &:hover{
+            border-bottom: 2px solid $colorBluishGrey;
+            color: $colorBluishGrey;
+          }
+          &.active{
+            border-bottom: 2px solid rgba(155, 174, 200, 0.6);
+            color: $colorBluishGrey;
+            &:hover{
+              color: $colorWhiteGrey;
+              border-bottom-color: $colorWhiteGrey;
+            }
+          }
+        }
+      }
+    }
+
+    .channels-content{
+      overflow: auto;
+      width: 100%;
+      height: calc(100% - 40px);
+      .game-card{
+        //padding: $globalPadding*4;
+        float: left;
+        width: 33.33%;
+        height: 310px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        .content{
+          background-color: rgba(255,255,255,0.2);
+          height: 100%;
+          padding-top: 74px;
+          .title{
+            color: $colorWhite;
+          }
+        }
+        .card-image{
+          //margin-top: $globalMargin*2;
+          img{
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+
+  }
+}

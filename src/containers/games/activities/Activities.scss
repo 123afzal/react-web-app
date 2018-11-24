@@ -1,0 +1,10 @@
+@import "../../../style/common/colors.scss";
+@import "../../../style/common/typography.scss";
+@import "../../../style/common/settings.scss";
+
+.game-activities{
+  position: relative;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  margin-top: $globalMargin*2;
+}

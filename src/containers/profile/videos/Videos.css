@@ -1,0 +1,20 @@
+.profile-content {
+  position: relative;
+  width: calc(100% - 200px);
+  margin: 0 auto; }
+  .profile-content .profile-videos {
+    margin-top: 10px;
+    position: relative; }
+    .profile-content .profile-videos .videos {
+      position: relative;
+      margin-top: 10px; }
+      .profile-content .profile-videos .videos .video video {
+        width: 200px; }
+      .profile-content .profile-videos .videos .video span {
+        padding-right: 10px;
+        font-size: 12px; }
+        .profile-content .profile-videos .videos .video span label {
+          font-size: 10px;
+          display: block;
+          position: absolute;
+          bottom: -12px; }

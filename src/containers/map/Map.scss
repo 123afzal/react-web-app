@@ -1,0 +1,26 @@
+@import "../../style/common/colors.scss";
+@import "../../style/common/typography.scss";
+@import "../../style/common/settings.scss";
+
+
+.map{
+  position: relative;
+  height: 100%;
+  background-image: url("../../assets/map.jpg");
+  background-position: center;
+  background-size: cover;
+  width:calc(100% - 310px);
+  .marker1{
+    position: absolute;
+    left: 130px;
+    top:250px;
+    color: $colorRed;
+  }
+  .marker2{
+    position: absolute;
+    right: 110px;
+    top: 340px;
+    color: $colorRed;
+  }
+
+}

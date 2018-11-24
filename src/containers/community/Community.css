@@ -1,0 +1,48 @@
+.community {
+  position: relative;
+  height: 100%; }
+  .community .main {
+    position: relative;
+    height: 100%;
+    padding-right: 320px; }
+    .community .main .top-navigations {
+      padding: 10px 0 10px 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40px; }
+      .community .main .top-navigations nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #d9e1e8; }
+        .community .main .top-navigations nav a:hover {
+          border-bottom: 2px solid #9baec8;
+          color: #9baec8; }
+        .community .main .top-navigations nav a.active {
+          border-bottom: 2px solid rgba(155, 174, 200, 0.6);
+          color: #9baec8; }
+          .community .main .top-navigations nav a.active:hover {
+            color: #d9e1e8;
+            border-bottom-color: #d9e1e8; }
+    .community .main .channels-content {
+      overflow: auto;
+      width: 100%;
+      height: calc(100% - 40px); }
+      .community .main .channels-content .game-card {
+        float: left;
+        width: 33.33%;
+        height: 310px;
+        text-align: center;
+        background-size: cover;
+        background-position: center; }
+        .community .main .channels-content .game-card .content {
+          background-color: rgba(255, 255, 255, 0.2);
+          height: 100%;
+          padding-top: 74px; }
+          .community .main .channels-content .game-card .content .title {
+            color: #ffffff; }
+        .community .main .channels-content .game-card .card-image img {
+          width: 100px;
+          height: 100px; }

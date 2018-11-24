@@ -1,0 +1,56 @@
+.actvities {
+  position: relative;
+  display: flex;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  margin-top: 30px; }
+  .actvities label {
+    font-size: 10px; }
+  .actvities .activity {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 100%; }
+    .actvities .activity .post-list {
+      padding: 10px 10px 0 10px;
+      width: 100%; }
+      .actvities .activity .post-list .post {
+        background-color: #282c37; }
+        .actvities .activity .post-list .post .user-header {
+          font-size: 12px;
+          position: relative;
+          padding: 10px 20px 10px 20px; }
+          .actvities .activity .post-list .post .user-header img {
+            width: 50px;
+            height: 50px; }
+          .actvities .activity .post-list .post .user-header .user-name {
+            position: absolute;
+            top: 18px;
+            padding-left: 10px; }
+          .actvities .activity .post-list .post .user-header .user-drop {
+            position: absolute;
+            right: 20px; }
+        .actvities .activity .post-list .post .post-content {
+          padding: 0 20px 0 20px;
+          font-size: 10px; }
+        .actvities .activity .post-list .post .lcs {
+          position: relative;
+          padding: 10px 20px 10px 20px; }
+          .actvities .activity .post-list .post .lcs ul {
+            margin: 0;
+            padding: 0; }
+            .actvities .activity .post-list .post .lcs ul li {
+              list-style: none;
+              display: inline;
+              padding-right: 10px; }
+        .actvities .activity .post-list .post .load-comments {
+          position: relative;
+          background-color: #37383d;
+          padding: 0 20px 0 20px; }
+        .actvities .activity .post-list .post .write-comment {
+          padding: 10px 20px 10px 20px;
+          display: flex; }
+          .actvities .activity .post-list .post .write-comment img {
+            width: 40px;
+            height: 40px; }

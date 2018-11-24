@@ -1,0 +1,92 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.search-modal {
+  width: 100%;
+  .heading {
+
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    input {
+      text-indent: 25px;
+    }
+    .fa-search {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+    }
+
+    .search-content {
+      position: relative;
+      width: 100%;
+      display: flex;
+      .search-users {
+        background-color: $colorInputBlack;
+        border: 2px solid$colorInputBlack;
+        border-radius: 5px;
+        width: 100%;
+        min-width: 600px;
+        img {
+          width: 45px;
+          height: 45px;
+        }
+        position: relative;
+        .result {
+          display: flex;
+          padding-top: $globalPadding;
+          padding-bottom: $globalPadding;
+          margin-left: $globalMargin;
+          button {
+            width: auto;
+            margin: 0;
+          }
+          .connect {
+            position: absolute;
+            right: 10px;
+          }
+        }
+      }
+      .search-filters{
+        text-align: left;
+        position: relative;
+        width: 100%;
+        padding: $globalPadding;
+        ul{
+          margin: 0;
+          padding: 0;
+          li{
+            display: inline;
+            list-style: none;
+            padding-right: $globalPadding*3;
+            input{
+              display: unset;
+              margin: 0;
+              width: 20px;
+              height: auto;
+            }
+          }
+        }
+        hr{
+          border-color: $colorBluishGrey;
+          margin: 0;
+        }
+      }
+    }
+    .searching {
+      position: relative;
+      width: 100%;
+      display: flex;
+      button {
+        margin: 0 0 0 $globalMargin;
+        height: 40px;
+        width: auto;
+      }
+    }
+  }
+}

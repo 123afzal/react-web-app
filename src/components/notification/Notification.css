@@ -1,0 +1,37 @@
+/* Typography */
+/* Buttons */
+.button, .btn-border, .btn-default {
+  cursor: pointer;
+  padding: 3px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 2px 5px; }
+
+.btn-border {
+  color: #9baec8;
+  background-color: transparent;
+  border: 1px solid #9baec8; }
+  .btn-border:hover {
+    border: 1px solid rgba(155, 174, 200, 0.6);
+    color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.btn-default {
+  color: #1f232b;
+  background-color: #9baec8; }
+  .btn-default:hover {
+    color: rgba(31, 35, 43, 0.6);
+    background-color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.notification-popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2b90d9;
+  color: #d9e1e8;
+  padding: 10px; }

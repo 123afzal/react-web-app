@@ -1,0 +1,14 @@
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.notification-popup{
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: $colorSkyBlue;
+  color: $colorWhiteGrey;
+  padding: $globalPadding;
+}

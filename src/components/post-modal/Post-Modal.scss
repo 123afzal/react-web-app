@@ -1,0 +1,95 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.post-modal{
+  position: relative;
+  max-width: 550px;
+  .user-info{
+    display: flex;
+    img{
+      height: 45px;
+      width: 45px;
+    }
+    span{
+      padding-left: $globalPadding;
+    }
+    .user-name{
+      display: flex;
+      padding-top: 3px;
+      .post-options{
+        left: 10px;
+      }
+    }
+    .user-nick{
+      color: $colorLightGrey;
+      position: relative;
+      top:-5px;
+      text-align: left;
+    }
+  }
+  .post-content{
+    position: relative;
+    width:100%;
+    p{
+      text-align: left;
+      //font-size: $fontSmallMedium;
+      margin:0;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .lcs{
+    font-size: $fontSmallMedium;
+    color: $colorLightGrey;
+    span{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  .comments{
+    margin-top: $globalMargin;
+    .input-comment{
+      width: 100%;
+      text-align: -webkit-center;
+      input{
+        margin: 0;
+      }
+    }
+    .comments-list{
+      .comment{
+        //display: flex;
+        margin-top: $globalMargin;
+        img{
+          height: 40px;
+          width: 40px;
+        }
+        span{
+          color:$colorLightGrey;
+        }
+        .lcs{
+          font-size: $fontSmallMedium;
+          padding-left: $globalPadding*5;
+          .like{
+            &.active{
+              color:$colorRed;
+            }
+          }
+          .dislike{
+            &.active{
+              color: $colorRed;
+            }
+          }
+        }
+        .comment-user{
+          display: flex;
+        }
+      }
+    }
+  }
+}

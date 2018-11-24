@@ -1,0 +1,159 @@
+/* Settings, Variables */
+/* Theme Colors */
+/* Typography */
+/* Buttons */
+.button, .btn-border, .btn-default {
+  cursor: pointer;
+  padding: 3px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 2px 5px; }
+
+.btn-border {
+  color: #9baec8;
+  background-color: transparent;
+  border: 1px solid #9baec8; }
+  .btn-border:hover {
+    border: 1px solid rgba(155, 174, 200, 0.6);
+    color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.btn-default {
+  color: #1f232b;
+  background-color: #9baec8; }
+  .btn-default:hover {
+    color: rgba(31, 35, 43, 0.6);
+    background-color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.server-settings {
+  width: 300px; }
+  .server-settings .heading {
+    color: #d9e1e8;
+    padding: 10px 10px 0 20px;
+    text-align: left; }
+    .server-settings .heading h6 {
+      margin: 0; }
+  .server-settings .settings-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left; }
+    .server-settings .settings-list ul li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      margin: 0 10px 0 10px;
+      color: #d9e1e8; }
+      .server-settings .settings-list ul li.active {
+        color: #ffffff;
+        background-color: #2b90d9;
+        border-radius: 5px;
+        border: none; }
+      .server-settings .settings-list ul li h6 {
+        margin: 0; }
+  .server-settings .settings-list .web-hooks {
+    background-color: #4b5056;
+    border-radius: 5px;
+    color: #ffffff; }
+
+.server-overview {
+  position: relative;
+  background-color: #4b5056 !important;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: left; }
+  .server-overview h6 {
+    margin: 0;
+    text-align: left; }
+  .server-overview hr {
+    border-color: #9baec8;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .server-overview .server-overview-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-top: 20px; }
+    .server-overview .server-overview-header .server-image {
+      position: relative;
+      left: 0;
+      min-width: 310px;
+      width: 100%;
+      text-align: left; }
+      .server-overview .server-overview-header .server-image img {
+        width: 128px;
+        height: 128px;
+        float: left; }
+      .server-overview .server-overview-header .server-image button {
+        width: auto;
+        margin-left: 0;
+        margin-top: 20px; }
+    .server-overview .server-overview-header .server-name {
+      text-align: left;
+      position: relative;
+      float: right;
+      right: 0;
+      padding-left: 20px;
+      min-width: 310px;
+      width: 100%; }
+  .server-overview .server-overview-content {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 12px;
+    text-align: left; }
+    .server-overview .server-overview-content .overview-channel-time {
+      display: flex; }
+      .server-overview .server-overview-content .overview-channel-time .channel {
+        width: 100%;
+        margin-right: 10px; }
+      .server-overview .server-overview-content .overview-channel-time .time {
+        width: 100%;
+        margin-left: 10px; }
+    .server-overview .server-overview-content span {
+      position: absolute; }
+  .server-overview .server-overview-footer {
+    font-size: 12px;
+    position: relative;
+    width: 100%;
+    margin-top: 60px; }
+    .server-overview .server-overview-footer h6 {
+      margin-bottom: 10px; }
+    .server-overview .server-overview-footer .footer-text {
+      position: relative;
+      height: 120px; }
+    .server-overview .server-overview-footer .checkboxes {
+      padding: 10px;
+      font-size: 16px; }
+      .server-overview .server-overview-footer .checkboxes input {
+        display: unset;
+        width: 20px;
+        margin: 0;
+        height: 20px; }
+      .server-overview .server-overview-footer .checkboxes .check-messages {
+        padding-left: 10px;
+        padding-top: 10px;
+        background-color: #2b90d9;
+        border-radius: 5px; }
+        .server-overview .server-overview-footer .checkboxes .check-messages label {
+          position: absolute;
+          bottom: 60px;
+          left: 50px; }
+      .server-overview .server-overview-footer .checkboxes .check-mention {
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+        background-color: #282c37;
+        border-radius: 5px; }
+        .server-overview .server-overview-footer .checkboxes .check-mention label {
+          position: absolute;
+          bottom: 13px;
+          left: 50px; }

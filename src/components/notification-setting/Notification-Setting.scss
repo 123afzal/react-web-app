@@ -1,0 +1,84 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+
+.notification{
+  text-align: left;
+  .mute-test{
+    input{
+      display: unset;
+      margin: 0;
+      width: 20px;
+      height: 20px;
+    }
+    display: flex;
+    font-size: $fontSmall;
+    h4{
+      margin: 0;
+    }
+    span{
+      padding-left: 10px;
+    }
+  }
+  .server-notificaion{
+    display: flex;
+    h6{
+      margin-bottom: 0;
+    }
+  }
+  .ticks{
+    display:flex;
+    ul{
+      padding:0;
+      li{
+        input{
+          display: unset;
+          margin: 0;
+          width: 20px;
+          height: 20px;
+        }
+        list-style: none;
+        padding: $globalPadding 0 $globalPadding 0;
+        span{
+          position: absolute;
+          padding-left: 10px;
+        }
+      }
+    }
+    .left-ticks{
+      width: 100%;
+    }
+    .right-ticks{
+      width: 100%;
+    }
+  }
+  .channel-setting{
+    ul{
+      margin:0;
+      padding:0;
+      li{
+        font-size: $fontSmall;
+        list-style: none;
+        display: inline;
+        padding-left: $globalPadding;
+        padding-right: $globalPadding;
+      }
+    }
+    .channel-name{
+      padding: $globalPadding*2 $globalPadding $globalPadding*2 $globalPadding;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+    }
+  }
+  .btn-footer{
+    padding-top: $globalPadding;
+    button{
+      width: auto;
+      float: right;
+    }
+  }
+}

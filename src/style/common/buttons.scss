@@ -1,0 +1,38 @@
+@import 'typography.scss';
+@import 'colors.scss';
+@import "settings.scss";
+
+.button{
+    cursor: pointer;
+    padding: 3px 15px;
+    font-size: $fontMedium;
+    text-decoration: none;
+    line-height: 36px;
+    border: 0;
+    border-radius: $globalRadius;
+    font-weight: bold;
+    margin: 2px 5px;
+}
+
+.btn-border{
+    @extend .button;
+    color: $colorBluishGrey;
+    background-color: $colorTransparent;
+    border: 1px solid $colorBluishGrey;
+    &:hover{
+        border: 1px solid $colorBluishGreyOpa6;
+        color: $colorBluishGreyOpa6;
+        transition: all 0.6s;
+    }
+}
+
+.btn-default{
+    @extend .button;
+    color:  $colorDarkGrey2;
+    background-color: $colorBluishGrey;
+    &:hover{
+        color: $colorDarkGrey2Opa6;
+        background-color: $colorBluishGreyOpa6;
+        transition: all 0.6s;
+    }
+}

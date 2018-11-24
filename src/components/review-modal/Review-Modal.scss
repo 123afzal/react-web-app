@@ -1,0 +1,25 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.review-modal{
+  text-align: left;
+  h3{
+    margin: 0 0 $globalMargin 0;
+  }
+  font-size: $fontSmall;
+  i{
+    padding-right: $globalPadding*2;
+  }
+  span{
+    i{
+      padding-right: 0;
+    }
+  }
+  button{
+    width: auto;
+  }
+}

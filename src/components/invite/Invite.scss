@@ -1,0 +1,37 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.invite{
+  .header{
+  }
+  .server-link{
+    margin-top: $globalPadding;
+    display: flex;
+    position: relative;
+    width: 100%;
+    input{
+      margin: 0;
+    }
+    button{
+      margin: 0;
+      width: 50%;
+    }
+  }
+  .expiry{
+    font-size: $fontSmall;
+  }
+  .footer{
+    font-size: $fontSmallMedium;
+    margin-top: $globalMargin*2;
+    input{
+      display: flex;
+      width: auto;
+      height:16px;
+      margin: 0;
+    }
+  }
+}

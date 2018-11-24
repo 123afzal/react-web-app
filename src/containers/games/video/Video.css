@@ -1,0 +1,5 @@
+.game-video {
+  position: relative;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  margin-top: 20px; }

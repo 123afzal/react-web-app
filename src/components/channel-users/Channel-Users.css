@@ -1,0 +1,58 @@
+/* Typography */
+/* Buttons */
+.button, .btn-border, .btn-default {
+  cursor: pointer;
+  padding: 3px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 2px 5px; }
+
+.btn-border {
+  color: #9baec8;
+  background-color: transparent;
+  border: 1px solid #9baec8; }
+  .btn-border:hover {
+    border: 1px solid rgba(155, 174, 200, 0.6);
+    color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.btn-default {
+  color: #1f232b;
+  background-color: #9baec8; }
+  .btn-default:hover {
+    color: rgba(31, 35, 43, 0.6);
+    background-color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.channel-users {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 250px;
+  background-color: rgba(49, 50, 55, 0.9); }
+  .channel-users .user-header {
+    display: flex;
+    box-shadow: 0 1px 1px 0 #1f232b;
+    padding: 10px;
+    background: #1f232b; }
+    .channel-users .user-header input {
+      width: 100%;
+      margin: 0; }
+  .channel-users .users {
+    text-align: left;
+    margin: 20px; }
+    .channel-users .users h6 {
+      margin: 0;
+      margin-bottom: 5px; }
+    .channel-users .users img {
+      width: 30px;
+      height: 30px; }
+    .channel-users .users span {
+      position: absolute;
+      font-size: 12px;
+      padding-left: 10px; }

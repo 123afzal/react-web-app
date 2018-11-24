@@ -1,0 +1,31 @@
+.reviews {
+  position: relative;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  margin-top: 20px; }
+  .reviews button {
+    margin: 0; }
+  .reviews label {
+    font-size: 10px; }
+  .reviews .review-list {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px; }
+    .reviews .review-list .review {
+      background-color: #282c37;
+      position: relative;
+      width: 100%;
+      margin: 10px 0 10px 0;
+      font-size: 12px; }
+      .reviews .review-list .review .review-info {
+        padding: 10px 0 0 20px;
+        position: relative;
+        display: flex; }
+        .reviews .review-list .review .review-info img {
+          width: 30px;
+          height: 30px; }
+        .reviews .review-list .review .review-info i {
+          padding-left: 10px; }
+        .reviews .review-list .review .review-info .review-post-time {
+          font-size: 10px; }

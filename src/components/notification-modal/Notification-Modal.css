@@ -1,0 +1,55 @@
+/* Theme Colors */
+/* Typography */
+/* Buttons */
+.button, .btn-border, .btn-default {
+  cursor: pointer;
+  padding: 3px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 2px 5px; }
+
+.btn-border {
+  color: #9baec8;
+  background-color: transparent;
+  border: 1px solid #9baec8; }
+  .btn-border:hover {
+    border: 1px solid rgba(155, 174, 200, 0.6);
+    color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.btn-default {
+  color: #1f232b;
+  background-color: #9baec8; }
+  .btn-default:hover {
+    color: rgba(31, 35, 43, 0.6);
+    background-color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.notification-modal {
+  width: 320px; }
+  .notification-modal .content {
+    position: relative;
+    height: 280px;
+    overflow: auto; }
+    .notification-modal .content input {
+      text-indent: 25px; }
+    .notification-modal .content .fa-search {
+      position: absolute;
+      top: 10px;
+      left: 10px; }
+    .notification-modal .content .search-users {
+      position: relative; }
+      .notification-modal .content .search-users img {
+        width: 45px;
+        height: 45px; }
+      .notification-modal .content .search-users .result {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+    .notification-modal .content .searching {
+      position: relative;
+      width: 100%; }

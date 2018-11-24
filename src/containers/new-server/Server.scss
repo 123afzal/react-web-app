@@ -1,0 +1,112 @@
+@import "../../style/common/colors.scss";
+@import "../../style/common/typography.scss";
+@import "../../style/common/settings.scss";
+
+.server{
+  position: relative;
+  height: 100%;
+
+  .channels{
+    top:0;
+    right: 80px;
+    bottom:0;
+    position: fixed;
+    width: 240px;
+    background-color: $colorGrayMixBlack;
+    //padding: $globalPadding*2;
+    .server-name{
+      padding: $globalPadding*2 +(3) $globalPadding*2 $globalPadding - 5  $globalPadding*2;
+      background-color: $colorGrayMixBlackDark;
+      .server-drp{
+        right: 0;
+        width: 230px;
+        top: 20px;
+      }
+    }
+    .channel-invite{
+      padding: $globalPadding*2;
+      background-color: $colorDarkGrey3;
+      width: 100%;
+      text-align: center;
+      p{
+        font-size: $fontSmallMedium;
+      }
+      button{
+        width: 100%;
+      }
+    }
+    .channels-list{
+      padding: $globalPadding*2;
+      font-size: $fontSmall;
+      .channel-name{
+        background-color: $colorMilkyGrey;
+        color: $colorWhite;
+        padding: 0 $globalPadding 0 $globalPadding;
+        span{
+          color: $colorBluishGrey;
+        }
+      }
+    }
+    .admin-controls{
+      background-color: $colorGrayMixBlackDark;
+      font-size: $fontSmall;
+      position: absolute;
+      width: 240px;
+      padding-left: $globalPadding !important;
+      bottom: 0;
+      height: 50px;
+      padding-top: $globalPadding - 2;
+      span{
+        position: absolute;
+        top:12px;
+      }
+      img{
+        width: 35px;
+        height: 35px;
+      }
+      .span-right{
+        position: absolute;
+        right:3px;
+        i{
+          padding-left:5px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .main{
+    position: relative;
+    height: 100%;
+    padding-right: 320px;
+    padding-left: 250px;
+    .header{
+      position: relative;
+      width: 100%;
+      text-align: right;
+      box-shadow: 0 1px 1px 0 $colorDarkGrey2;
+      padding: $globalPadding*2 +(6) 0 $globalPadding 0;
+      i{
+        padding-left: $globalPadding;
+        padding-right: $globalPadding;
+      }
+    }
+    .content{
+      height: calc(100% - 54px - 60px);
+    }
+
+    .footer{
+      width: 100%;
+      padding: $globalPadding;
+      position: relative;
+      bottom: 0;
+      hr{
+        border-color: $colorBlack;
+      }
+      input{
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

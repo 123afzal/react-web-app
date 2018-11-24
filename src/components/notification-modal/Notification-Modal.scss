@@ -1,0 +1,41 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+
+.notification-modal{
+  width: 320px;
+  .heading{
+
+  }
+  .content{
+    position: relative;
+    height: 280px;
+    overflow: auto;
+    input { text-indent: 25px;}
+    .fa-search {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .search-users{
+      img{
+        width: 45px;
+        height: 45px;
+      }
+      position: relative;
+      .result{
+        display:flex;
+        padding-top: $globalPadding;
+        padding-bottom: $globalPadding;
+      }
+    }
+    .searching{
+      position: relative;
+      width:100%;;
+    }
+  }
+}

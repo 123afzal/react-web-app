@@ -1,0 +1,176 @@
+@import "../../style/common/colors.scss";
+@import "../../style/common/typography.scss";
+@import "../../style/common/settings.scss";
+
+.home{
+
+    position: relative;
+    height: 100%;
+    overflow: auto;
+
+    .container{
+        max-width: 800px;
+    }
+    .highlight{
+        color: $colorWhiteGrey
+    }
+
+    //Navigations
+    nav a{
+        padding-left: $globalPadding;
+        padding-right: $globalPadding;
+        text-decoration: none;
+        color: $colorBluishGrey;
+    }
+
+    nav a img{
+        margin-top: -30px;
+        width: 100px;
+        float: left;
+    }
+
+    nav a span {
+        float: left;
+        font-size: 20px;
+    }
+
+    nav a:hover{
+        color: $colorWhiteGrey;
+        transition:0.5s all;
+    }
+
+    section.nav{
+        margin-top: 30px;
+        text-align: right;
+    }
+
+    /* Always divide a page into sections */
+    section.intro{
+        padding: $globalPadding*4 0 0;
+        p{
+            max-width: 100%;
+            font-size: $fontMediumLarge;
+            margin: 0 auto;
+        }
+        .buttons{
+            margin: $globalMargin*4 0;
+        }
+        .intro-img-div{
+            position: relative;
+            height: 330px;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    section.channels{
+        padding: $globalPadding*2 0;
+        background-color: $colorDarkGrey3;
+        position: relative;
+        max-width: 800px;
+        min-width: 100%;
+        img{
+            width: 180px;
+        }
+    }
+
+    section.features{
+        position: relative;
+        padding: $globalPadding*5 0 0;
+
+        .feature{
+            position: relative;
+            display: flex;
+            padding: $globalPadding*5 0;
+            @media all and (max-width: 700px){
+                display: inherit;
+            }
+            &.text-left{
+                text-align: left;
+                flex-direction: row;
+                .feature-icon{
+                    width: 100px;
+                    margin-left: $globalMargin*5;
+                    i{
+                        font-size: 100px;
+                    }
+                }
+            }
+            &.text-right{
+                text-align: right;
+                flex-direction: row-reverse;
+                .feature-icon{
+                    width: 100px;
+                    margin-right: $globalMargin*5;
+                    i{
+                        font-size: 100px;
+                    }
+                }
+            }
+        }
+
+        .feature-table{
+            position: relative;
+            padding: $globalPadding*5 0;
+            text-align: left;
+            .footer{
+                margin: $globalMargin*3 0;
+            }
+        }
+
+    }
+
+    section.installation, section.works{
+        background-color: $colorDarkGrey3;
+        padding: $globalPadding*5 0;
+        text-align: left;
+        .footer{
+            margin: $globalMargin*3 0;
+        }
+    }
+
+    section.works{
+        background-color: $colorDarkGrey2;
+        .work{
+            position: relative;
+            display: flex;
+            padding: 0 0 $globalPadding*3;
+            @media all and (max-width: 700px){
+                display: inherit;
+            }
+            .content{
+                margin-right: $globalMargin*2;
+            }
+            .work-img{
+                min-width: 500px;
+                @media all and (max-width: 500px){
+                    min-width: 100%;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    section.sponsors-branding {
+        position: relative;
+        padding: $globalPadding*5 0;
+        text-align: left;
+        background-color: $colorDarkGrey3;
+
+        .main {
+            position: relative;
+            display: flex;
+            @media all and (max-width: 700px){
+                display: inherit;
+            }
+            .sponsors{
+                margin-right: $globalMargin*2;
+            }
+        }
+    }
+
+}

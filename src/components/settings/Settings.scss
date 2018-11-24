@@ -1,0 +1,89 @@
+/* Settings, Variables */
+@import "../../style/common/settings.scss";
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.settings{
+  width: 300px;
+  .heading{
+    color: $colorWhiteGrey;
+    padding: $globalPadding*2;
+    h3{
+      margin: 0;
+    }
+  }
+  .settings-list{
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+      li{
+        padding-top: $globalPadding - 5;
+        padding-bottom: $globalPadding - 5;
+        padding-left: $globalPadding*2;
+        color: $colorWhiteGrey;
+        &.active{
+          border-left: 4px solid rgba(155, 174, 200, 0.6);
+          color: $colorBluishGrey;
+        }
+      }
+    }
+  }
+}
+.tab-account{
+  background-color: white !important;
+  width: 100%;
+  .pop-up{
+    margin-top: $globalMargin*2;
+    margin-bottom: $globalMargin*2;
+    width: 100%;
+    .warning{
+      h5{
+        margin: 0;
+      }
+      p{
+        margin: 0;
+      }
+      padding: $globalPadding;
+      background: $colorPink;
+      border: 2px solid $colorRed;
+      color: $colorRed;
+      border-radius: 5px;
+      max-width: 600px;
+      text-align: left;
+      margin: auto;
+    }
+  }
+  .user-personal{
+    display: flex;
+    flex-direction: row;
+    margin: 0 $globalMargin*4 $globalMargin*2 $globalMargin*4;
+    .user-personal-edit{
+      width: 100%;
+      text-align: left;
+    }
+    .user-image{
+      width:100%;
+      margin: auto;
+      img{
+        width: 200px;
+        height:200px;
+      }
+    }
+  }
+  .account-btn{
+    right: 30px;
+    float: right;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    button{
+      width: auto;
+    }
+  }
+}

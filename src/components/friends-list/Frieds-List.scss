@@ -1,0 +1,95 @@
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+
+section.friends{
+
+  hr{
+    border-color: $colorBlack;
+  }
+
+  span{
+    padding-left: $globalPadding;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif !important;
+  }
+
+  top:0;
+  right: 80px;
+  bottom:0;
+  position: fixed;
+  background-color: $colorGrayMixBlack;
+  //position: relative;
+  //float: right;
+  //right: 80px;
+  //width: 240px;
+
+  .search-friend{
+    text-align: center;
+    margin: $globalMargin*2;
+    margin-right: $globalMargin;
+  }
+  .search-friend input{
+    width: 200px;
+  }
+
+  .friends-list{
+    margin-top: $globalMargin*2;
+    padding-left: $globalPadding;
+    .friends-title{
+      background-color: $colorMilkyGrey;
+      color: $colorWhite;
+      padding: $globalPadding;
+    }
+  }
+
+  .list{
+    padding-left:$globalPadding*2;
+    margin-top: $globalMargin*2;
+    font-size: $fontSmall;
+    ul{
+      padding: 0;
+      margin-top: 0;
+      padding-left: $globalPadding;
+      li{
+        list-style: none;
+        padding-bottom: $globalPadding;
+        padding-top: $globalPadding;
+        display: flex;
+        img{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .user-chat-control{
+    background-color: $colorGrayMixBlackDark;
+    font-size: $fontSmall;
+    position: absolute;
+    width: 100%;
+    padding-left: 25px !important;
+    bottom: 0;
+    height: 50px;
+    padding-top: 8px;
+    span{
+      position: absolute;
+      top:12px;
+    }
+    img{
+      width: 35px;
+      height: 35px;
+    }
+    .span-right{
+      position: absolute;
+      right:3px;
+      i{
+        padding-left:5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}

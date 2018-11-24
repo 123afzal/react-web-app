@@ -1,0 +1,35 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.message-modal{
+  position: relative;
+  width: 100%;
+  text-align: left;
+  .message-header{
+    position: relative;
+    width: 100%;
+    img{
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .type-message{
+    clear: both;
+    textarea{
+      padding-left: $globalPadding;
+    }
+  }
+
+  .choose-game{
+    position: relative;
+    width:100%;
+    button{
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

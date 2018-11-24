@@ -1,0 +1,86 @@
+/* Theme Colors */
+/* Typography */
+/* Buttons */
+.button, .btn-border, .btn-default {
+  cursor: pointer;
+  padding: 3px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 36px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 2px 5px; }
+
+.btn-border {
+  color: #9baec8;
+  background-color: transparent;
+  border: 1px solid #9baec8; }
+  .btn-border:hover {
+    border: 1px solid rgba(155, 174, 200, 0.6);
+    color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.btn-default {
+  color: #1f232b;
+  background-color: #9baec8; }
+  .btn-default:hover {
+    color: rgba(31, 35, 43, 0.6);
+    background-color: rgba(155, 174, 200, 0.6);
+    transition: all 0.6s; }
+
+.notification {
+  text-align: left; }
+  .notification .mute-test {
+    display: flex;
+    font-size: 12px; }
+    .notification .mute-test input {
+      display: unset;
+      margin: 0;
+      width: 20px;
+      height: 20px; }
+    .notification .mute-test h4 {
+      margin: 0; }
+    .notification .mute-test span {
+      padding-left: 10px; }
+  .notification .server-notificaion {
+    display: flex; }
+    .notification .server-notificaion h6 {
+      margin-bottom: 0; }
+  .notification .ticks {
+    display: flex; }
+    .notification .ticks ul {
+      padding: 0; }
+      .notification .ticks ul li {
+        list-style: none;
+        padding: 10px 0 10px 0; }
+        .notification .ticks ul li input {
+          display: unset;
+          margin: 0;
+          width: 20px;
+          height: 20px; }
+        .notification .ticks ul li span {
+          position: absolute;
+          padding-left: 10px; }
+    .notification .ticks .left-ticks {
+      width: 100%; }
+    .notification .ticks .right-ticks {
+      width: 100%; }
+  .notification .channel-setting ul {
+    margin: 0;
+    padding: 0; }
+    .notification .channel-setting ul li {
+      font-size: 12px;
+      list-style: none;
+      display: inline;
+      padding-left: 10px;
+      padding-right: 10px; }
+  .notification .channel-setting .channel-name {
+    padding: 20px 10px 20px 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid; }
+  .notification .btn-footer {
+    padding-top: 10px; }
+    .notification .btn-footer button {
+      width: auto;
+      float: right; }

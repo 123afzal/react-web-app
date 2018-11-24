@@ -1,0 +1,115 @@
+.feed {
+  position: relative;
+  height: 100%; }
+  .feed hr {
+    margin-bottom: 0px;
+    border-color: #000000; }
+  .feed .main {
+    position: relative;
+    height: 100%;
+    padding-right: 310px; }
+    .feed .main .video {
+      width: 100%;
+      float: left;
+      height: 100%; }
+      .feed .main .video .heading {
+        background: #32353a;
+        padding: 10px 0 10px 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px; }
+        .feed .main .video .heading span {
+          padding-left: 10px; }
+        .feed .main .video .heading .search-bar {
+          float: left;
+          width: 33.33%; }
+          .feed .main .video .heading .search-bar .fa-search {
+            position: absolute;
+            top: 20px;
+            right: 35%; }
+      .feed .main .video .container {
+        max-width: 550px;
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: calc(100% - 40px);
+        min-height: calc(100% - 40px);
+        position: relative; }
+        .feed .main .video .container .left-div {
+          width: 100%; }
+        .feed .main .video .container .right-div {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 100%;
+          top: 0;
+          transition: all 0.5s; }
+          .feed .main .video .container .right-div .main-content {
+            overflow-y: auto;
+            background-color: #1f232b; }
+        .feed .main .video .container.active {
+          overflow: hidden; }
+          .feed .main .video .container.active .right-div {
+            left: 0; }
+        .feed .main .video .container .main-content {
+          padding: 10px;
+          height: 100%; }
+          .feed .main .video .container .main-content .posts {
+            padding: 10px;
+            background: #32353a; }
+            .feed .main .video .container .main-content .posts .user-info {
+              display: flex; }
+              .feed .main .video .container .main-content .posts .user-info img {
+                height: 45px;
+                width: 45px; }
+              .feed .main .video .container .main-content .posts .user-info span {
+                padding-left: 10px; }
+              .feed .main .video .container .main-content .posts .user-info .user-name {
+                display: flex;
+                padding-top: 3px; }
+                .feed .main .video .container .main-content .posts .user-info .user-name .post-options {
+                  left: 10px; }
+              .feed .main .video .container .main-content .posts .user-info .user-nick {
+                color: #999d9e;
+                position: relative;
+                top: -5px; }
+            .feed .main .video .container .main-content .posts .post-content p {
+              text-align: left;
+              margin: 0; }
+            .feed .main .video .container .main-content .posts .post-content img {
+              width: 100%;
+              height: 100%; }
+            .feed .main .video .container .main-content .posts .post-info {
+              color: #999d9e;
+              font-size: 14px; }
+              .feed .main .video .container .main-content .posts .post-info span {
+                padding-left: 5px;
+                padding-right: 5px; }
+            .feed .main .video .container .main-content .posts .lcs {
+              font-size: 14px;
+              color: #999d9e; }
+              .feed .main .video .container .main-content .posts .lcs span {
+                padding-left: 5px;
+                padding-right: 5px; }
+            .feed .main .video .container .main-content .posts .back-feed {
+              display: flex;
+              margin-bottom: 10px; }
+            .feed .main .video .container .main-content .posts .comments {
+              margin-top: 10px; }
+              .feed .main .video .container .main-content .posts .comments .input-comment {
+                width: 100%;
+                text-align: -webkit-center; }
+                .feed .main .video .container .main-content .posts .comments .input-comment input {
+                  margin: 0; }
+              .feed .main .video .container .main-content .posts .comments .comments-list {
+                display: flex;
+                margin-top: 10px; }
+                .feed .main .video .container .main-content .posts .comments .comments-list img {
+                  height: 40px;
+                  width: 40px; }
+                .feed .main .video .container .main-content .posts .comments .comments-list span {
+                  color: #999d9e; }
+              .feed .main .video .container .main-content .posts .comments .lcs {
+                font-size: 14px;
+                padding-left: 50px; }

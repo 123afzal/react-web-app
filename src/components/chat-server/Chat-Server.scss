@@ -1,0 +1,63 @@
+/* Theme Colors */
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+
+.chat-server{
+  .heading{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: $colorBluishGrey;
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        color: $colorWhiteGrey;
+        font-size: $fontLarge;
+        display: inline;
+        list-style: none;
+        margin: 0 $globalMargin*5 0 $globalMargin*5;
+        font-weight: bolder;
+        &.active{
+          color: $colorBluishGrey;
+          border-bottom: 2px solid rgba(155, 174, 200, 0.6);
+          &:hover{
+            color: $colorWhiteGrey;
+            border-bottom-color: $colorWhiteGrey;
+          }
+        }
+      }
+      li:hover{
+        border-bottom: 2px solid $colorBluishGrey;
+        color: $colorBluishGrey;
+      }
+    }
+  }
+
+  .content{
+    margin-top: $globalMargin;
+    .join-server{
+      .entry{
+        text-align: left;
+        h6{
+          margin-bottom: $globalMargin;
+        }
+        input{
+          margin: 0;
+          width: 100%;
+        }
+      }
+      .footer{
+        margin-top: $globalMargin;
+        button{
+          width: auto;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,159 @@
+.profile {
+  position: relative;
+  height: 100%;
+  width: calc(100% - 310px);
+  overflow: auto; }
+  .profile .profile-cover {
+    position: relative;
+    background-image: url("../../assets/cover.jpg");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: black 0px -32px 200px -30px inset; }
+    .profile .profile-cover .social-icons {
+      position: absolute;
+      left: 100px;
+      top: 30px; }
+      .profile .profile-cover .social-icons img {
+        width: 30px;
+        padding-right: 10px; }
+    .profile .profile-cover .display-picture {
+      position: absolute;
+      display: flex;
+      left: 100px;
+      bottom: 30px; }
+      .profile .profile-cover .display-picture img {
+        width: 70px;
+        height: 70px; }
+      .profile .profile-cover .display-picture .display-name {
+        padding-top: 15px;
+        padding-left: 10px; }
+        .profile .profile-cover .display-picture .display-name .user-nick {
+          font-size: 12px; }
+    .profile .profile-cover .cover-buttons {
+      position: absolute;
+      bottom: 30px;
+      right: 100px; }
+      .profile .profile-cover .cover-buttons button {
+        width: auto;
+        float: left; }
+        .profile .profile-cover .cover-buttons button i {
+          padding-right: 5px; }
+  .profile .profile-options {
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    font-size: 12px; }
+    .profile .profile-options ul {
+      margin: 0;
+      padding: 0; }
+      .profile .profile-options ul li {
+        list-style: none;
+        display: inline;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 12px; }
+        .profile .profile-options ul li.active {
+          border-bottom: 2px solid rgba(155, 174, 200, 0.6); }
+  .profile .profile-content {
+    position: relative;
+    width: calc(100% - 200px);
+    margin: 0 auto; }
+    .profile .profile-content .user-overview {
+      margin-top: 10px;
+      font-size: 12px; }
+    .profile .profile-content .profile-videos {
+      margin-top: 10px;
+      position: relative; }
+      .profile .profile-content .profile-videos .videos {
+        position: relative;
+        margin-top: 10px; }
+        .profile .profile-content .profile-videos .videos .video {
+          font-size: 10px;
+          float: left; }
+          .profile .profile-content .profile-videos .videos .video video {
+            width: 200px;
+            margin: 5px; }
+    .profile .profile-content .game-actvities {
+      position: relative;
+      display: flex;
+      margin-top: 30px;
+      margin-left: 20px;
+      clear: both; }
+      .profile .profile-content .game-actvities label {
+        font-size: 10px; }
+      .profile .profile-content .game-actvities .games-list {
+        position: relative;
+        max-width: 270px;
+        width: 100%;
+        margin-top: 10px; }
+        .profile .profile-content .game-actvities .games-list ul {
+          margin: 0;
+          padding: 0;
+          padding-top: 10px; }
+          .profile .profile-content .game-actvities .games-list ul li {
+            list-style: none;
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px; }
+            .profile .profile-content .game-actvities .games-list ul li img {
+              width: 80px;
+              height: 80px; }
+      .profile .profile-content .game-actvities .activities {
+        position: relative;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 100%; }
+        .profile .profile-content .game-actvities .activities .post-list {
+          padding: 10px 10px 0 10px;
+          width: 100%; }
+          .profile .profile-content .game-actvities .activities .post-list .post {
+            background-color: #282c37; }
+            .profile .profile-content .game-actvities .activities .post-list .post .user-header {
+              font-size: 12px;
+              position: relative;
+              padding: 10px 20px 10px 20px; }
+              .profile .profile-content .game-actvities .activities .post-list .post .user-header img {
+                width: 50px;
+                height: 50px; }
+              .profile .profile-content .game-actvities .activities .post-list .post .user-header .user-name {
+                position: absolute;
+                top: 18px;
+                padding-left: 10px; }
+              .profile .profile-content .game-actvities .activities .post-list .post .user-header .user-drop {
+                position: absolute;
+                right: 20px; }
+            .profile .profile-content .game-actvities .activities .post-list .post .post-content {
+              padding: 0 20px 0 20px;
+              font-size: 10px; }
+            .profile .profile-content .game-actvities .activities .post-list .post .lcs {
+              position: relative;
+              padding: 10px 20px 10px 20px; }
+              .profile .profile-content .game-actvities .activities .post-list .post .lcs ul {
+                margin: 0;
+                padding: 0; }
+                .profile .profile-content .game-actvities .activities .post-list .post .lcs ul li {
+                  list-style: none;
+                  display: inline;
+                  padding-right: 10px; }
+            .profile .profile-content .game-actvities .activities .post-list .post .load-comments {
+              position: relative;
+              background-color: #37383d;
+              padding: 0 20px 0 20px; }
+            .profile .profile-content .game-actvities .activities .post-list .post .write-comment {
+              padding: 10px 20px 10px 20px;
+              display: flex; }
+              .profile .profile-content .game-actvities .activities .post-list .post .write-comment img {
+                width: 40px;
+                height: 40px; }
+    .profile .profile-content .groups {
+      position: relative;
+      margin-top: 10px; }
+      .profile .profile-content .groups .group-content {
+        width: 100%;
+        margin-top: 10px;
+        padding: 60px;
+        background-color: #37383d;
+        text-align: center; }

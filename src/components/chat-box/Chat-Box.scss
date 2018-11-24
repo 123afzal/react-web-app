@@ -1,0 +1,55 @@
+@import "../../style/common/colors.scss";
+/* Typography */
+@import "../../style/common/typography.scss";
+/* Buttons */
+@import "../../style/common/buttons.scss";
+
+.chat-box {
+  width: 250px;
+  background-color: $colorGrayMixBlackDark;
+  float: right;
+  position: relative;
+  margin-right: $globalMargin;
+  .chat-header {
+    font-size: $fontSmall;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+    .chatter-name {
+      display: flex;
+      padding: $globalPadding - 5 $globalPadding $globalPadding - 5 $globalPadding;
+      .span-right {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+  .chat-content {
+    transition: all 0.5s;
+    .chat-messages {
+      background-color: $colorWhite;
+      height: 200px;
+      padding-left: $globalPadding;
+      .message {
+        font-size: $fontSmall;
+        border-radius: 5px;
+        background-color: #333031;
+        position: absolute;
+        bottom: 45px;
+        right: 10px;
+        background-color: $colorGrayMixBlackDark;
+        padding: $globalPadding - 5;
+      }
+    }
+    .chat-input-message {
+      input {
+        margin: 0;
+        padding: 0 0 0 $globalPadding;
+      }
+    }
+  }
+  &.active{
+    bottom: 240px;
+  }
+}

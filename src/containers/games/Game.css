@@ -1,0 +1,72 @@
+.game {
+  position: relative;
+  width: calc(100% - 310px);
+  height: 100%;
+  overflow: auto; }
+  .game .game-cover {
+    position: relative;
+    background-image: url("../../assets/g8.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: black 0px -32px 200px -30px inset; }
+    .game .game-cover .social-icons {
+      position: absolute;
+      left: 100px;
+      top: 30px; }
+      .game .game-cover .social-icons img {
+        width: 30px;
+        padding-right: 10px; }
+    .game .game-cover .game-display-picture {
+      position: absolute;
+      display: flex;
+      left: 100px;
+      top: 200px; }
+      .game .game-cover .game-display-picture img {
+        width: 70px;
+        height: 70px; }
+      .game .game-cover .game-display-picture .display-name {
+        padding-top: 15px;
+        padding-left: 10px; }
+        .game .game-cover .game-display-picture .display-name .user-nick {
+          font-size: 12px; }
+    .game .game-cover .cover-buttons {
+      position: absolute;
+      top: 200px;
+      right: 100px; }
+      .game .game-cover .cover-buttons button {
+        width: auto;
+        float: left; }
+        .game .game-cover .cover-buttons button i {
+          padding-right: 5px; }
+    .game .game-cover .game-options {
+      position: absolute;
+      bottom: 10px;
+      left: 100px;
+      font-size: 12px; }
+      .game .game-cover .game-options ul {
+        margin: 0;
+        padding: 0; }
+        .game .game-cover .game-options ul li {
+          list-style: none;
+          display: inline;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding-bottom: 13px; }
+          .game .game-cover .game-options ul li.active {
+            border-bottom: 2px solid rgba(155, 174, 200, 0.6); }
+    .game .game-cover .game-info {
+      position: absolute;
+      bottom: 80px;
+      left: 100px; }
+      .game .game-cover .game-info span {
+        font-size: 12px; }
+        .game .game-cover .game-info span label {
+          font-weight: bold; }
+    .game .game-cover .game-platforms {
+      position: absolute;
+      bottom: 50px;
+      left: 100px; }
+      .game .game-cover .game-platforms span {
+        font-size: 12px; }
