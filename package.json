@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.4",
     "font-awesome": "^4.7.0",
     "narcissus": "^1.0.0",
     "node-sass-chokidar": "0.0.3",
